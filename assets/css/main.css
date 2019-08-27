@@ -4655,3 +4655,7 @@ input, select, textarea {
 	.post.featured .text .text title {
 		color: orange;
 	}
+
+	.caption{
+		text-align: center;
+	}

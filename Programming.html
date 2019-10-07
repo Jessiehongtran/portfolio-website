@@ -49,6 +49,78 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
+									<span class="date">Sep 25, 2019</span>
+									<h1>Deforestation Dashboard</h1>
+									<p>The Deforestation Dashboard gives users insight into how the world's forests are changing – where forest cover is declining and where it is actually increasing.</p>
+									<p>Our mission is to connect and educate people to nature. We strive to facilitate acts of kindness no matter where you are or how much you can contribute. We strive to provide accurate data that shows the effects the loss of forests and its effects on geosystems. We also our community information on future forest cover based upon historical data.</p>
+									<b><ul>Features included in MVP:</ul></b>
+									<div class="left">
+		
+										<li>Navigation on all pages</li>
+										<li>Onboarding for new user</li>
+										<li>Page and working functionality for a user to add, update, and delete countries within profile.</li>
+										<li>Page displaying existing countries saved that can be modified by user.</li>
+										<li>Choropleth maps that show forest cover by country over time.</li>
+										<li>An interactive component that allows users to select a country and get more detailed information.</li>
+										<li>Create a model that predicts future forest cover based upon historical data.</li>
+									</div>
+									<p><b>Contribution: </b></br>
+									In charge of Back End, I delivered Back End web server by designing data structure to store data from users through end points:
+									</br>//GET users:
+									<a href="https://deforestation.herokuapp.com/api/users">https://deforestation.herokuapp.com/api/users</a>
+									</br>//GET user by id:
+									<a href="https://deforestation.herokuapp.com/api/users/:id">https://deforestation.herokuapp.com/api/users/:id</a>
+									</br>//POST a user for registering (signUp): 
+									<a href="https://deforestation.herokuapp.com/api/users/register">https://deforestation.herokuapp.com/api/users/register</a>
+									</br>{
+									   “first_name”: “Lambda”,
+									   “last_name”: “Tran”,
+									   “email”: “abc111115786666@lamba.com”, //*requied, email has to be unique
+									   “password”: “TestABCD” //*required
+									}
+									</br>//POST to verify for LogIn: 
+									<a href="https://deforestation.herokuapp.com/api/users/login">https://deforestation.herokuapp.com/api/users/login</a>
+									</br>{
+									 “message”: “Welcome abc11111578@lamba.com!“,
+									</br>“user”: {
+									   “id”: 4,
+									   “first_name”: “Test”,
+									   “last_name”: “Tran”,
+									   “email”: “abc11111578@lamba.com”,
+									   “password”: “$2a$12$yusNd4byk3mzTnPQwAZsFOzGMDyWWwzFv2g.cY9U1x7RAU3J2r0/G”
+									 },
+									</br> “token”: “eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiYzExMTExNTc4QGxhbWJhLmNvbSIsImlh
+									</br>dCI6MTU2OTQzMzI5MCwiZXhwIjoxNTY5NTE5NjkwfQ.NtMIligUP2ujluIX7CviocO_it0B24GtRtAA0PbJvSc”
+									}
+									</br>//POST to create a user profile
+									<a href="https://deforestation.herokuapp.com/api/users/profile">https://deforestation.herokuapp.com/api/users/profile</a>
+									</br>{
+									 “residence”: “U.S”,
+									 “zipcode”: 95124, //integer
+									 “occupation”: “Student”,
+									 “age”: 39, //float
+									 “user_id”: 3
+									}
+									</p>
+									<p><b>Deloyed App: </b> <a href="https://deforestfrontent.herokuapp.com/">https://deforestfrontent.herokuapp.com/</a>
+									<p><b>GitHub Repo: </b> <a href="https://github.com/bw-deforestation-prediction/Back-End">https://github.com/bw-deforestation-prediction/Back-End</a>
+									<div class="image main"><img src="https://res.cloudinary.com/dfulxq7so/image/upload/v1570465945/Screen_Shot_2019-10-07_at_9.31.03_AM_buuovu.png" alt="" /></div>
+								</header>
+							</section>
+							<section class="post">
+								<header class="major">
+									<span class="date">Aug 30, 2019</span>
+									<h1>Finding Planet App</h1>
+									<p>The Transiting Exoplanet Survey Satellite (TESS) is a space telescope for NASA's Explorers program, designed to search for exoplanets using the transit method in an area 400 times larger than that covered by the Kepler mission.</p>
+									<p>In a team including UI, Front End, Back End, Data Science, Machine Learning, we created this app so that users can through light curves vote likability whether a star is a planet and from there, it invokes a community helping to give input about planet exploration.</p>
+									<p><b>Deloyed App: </b> <a href="https://finding-planets-tess.netlify.com/">https://finding-planets-tess.netlify.com/</a>
+									<p><b>GitHub Repo: </b> <a href="https://github.com/BW-Finding-Planets/Frontend">https://github.com/BW-Finding-Planets/Frontend</a>
+						
+									<div class="image main"><img src="images/planet.png" alt="" /></div>
+								</header>
+							</section>
+							<section class="post">
+								<header class="major">
 									<span class="date">August 21, 2019</span>
 									<h1>Redux<br />
 									Car Sales Project</h1>
@@ -63,7 +135,7 @@
 									<!-- </ul> -->
 								</p>
 								<p>Test live the features here: <a href="https://car-sales.htran2.now.sh/">https://car-sales.htran2.now.sh/</a></p>
-
+								<p>GitHub Repo: <a href="https://github.com/Jessiehongtran/Car-Sales">https://github.com/Jessiehongtran/Car-Sales</a></p>
 								<div class="image main"><img src="images/car-sales.png" alt="" /></div>
 
 								<p>To create these above features, I did:</p>
@@ -96,8 +168,10 @@
 									</br>This is still work in progress. The app currently includes: 
 									<li>a marketing page (done by UI member): <a href="https://nostalgic-mcclintock-4eeed5.netlify.com/">https://nostalgic-mcclintock-4eeed5.netlify.com/</a></li>
 									<li>user onboarding process (done by me and other front-end guys): <a href="https://front-end-iy9y89tcy.now.sh/">https://front-end-iy9y89tcy.now.sh/</a></li>
+							
 									<i>We used React to create login, signup and create profile components, then use a Robot API to fetch profile picture data</i>
-									<li>user database: stored at backend <a href=>https://bw-friendfinder.herokuapp.com/swagger-ui.html</a></li>
+									</br>GitHub Repo: <a href="https://github.com/build-week-friend-finder/frontend">https://github.com/build-week-friend-finder/frontend</a></li>
+									<li>user database: stored at backend <a href="https://bw-friendfinder.herokuapp.com/swagger-ui.html">https://bw-friendfinder.herokuapp.com/swagger-ui.html</a></li>
 
 									</br>In the future release, we wish to build more functions:
 									<li>Dashboard for app (where you “connect” or “move on” with someone)</li>
@@ -137,7 +211,8 @@
 									<p><b>App Features</b>
 						
 										</br>The app currently includes: 
-										<li>a marketing page (done by UI members including me): <a href="https://use-my-tool.now.sh/">https://use-my-tool.now.sh/</a></li>
+										<li>a marketing page (done by UI members including me): <a href="https://use-my-tool.now.sh/">https://use-my-tool.now.sh/</a>
+										</br>GitHub Repo: <a href="https://github.com/lambda-usemytools/Honglandingpage">https://github.com/lambda-usemytools/Honglandingpage</a></li>
 										<li>Sign Up, Sign In, Add a Tool, Borrow a Tool (done by front-end & back-end members): </br>      <a href="https://gracious-ptolemy-4a8ec7.netlify.com/">     https://gracious-ptolemy-4a8ec7.netlify.com/</a></li>
 										<p>So our MVP: Users can log in and create a profile. They can then set up items they have available - anything from a shovel to power washers to tile saws. Users will be able to Create, Read, Update and Delete data. A 2nd user can log in and see items that users have available and request to borrow.
 												<button onClick="window.location.href= 'https://www.youtube.com/watch?v=SyUDohkuE1g&feature=youtu.be'">App Demo</button>	
@@ -158,6 +233,19 @@
 										<div class="image main"><img src="images/use-my-tool.png" alt="" /></div>
 	
 									</section>
+
+								<section class="post">
+										<header class="major">
+											<span class="date">Aug 27, 2019</span>
+											<h1>React<br />
+												React Bubble Color App</h1>
+											<p><b>Deloyed App: </b> <a href="https://react-bubble.now.sh/login">https://react-bubble.now.sh/login</a>
+											<i>(Username: test; Password: test)</i></p>
+											<p><b>App Features:</b> With this app, user should be able to login, request a token from the server that user'll use to send all other requests to the server, then EDIT, DELETE, ADD colors.</p>
+											<p>GitHub Repo: <a href="https://github.com/Jessiehongtran/react-bubbles/tree/hong-tran">https://github.com/Jessiehongtran/react-bubbles/tree/hong-tran</a></p>
+											<div class="image main"><img src="images/color.png" alt="" /></div>
+										</header>
+								</section>
 								
 								<section class="post">
 									<header class="major">
@@ -165,6 +253,7 @@
 										<h1>React<br />
 											American Football ScoreBoard</h1>
 										<p>Deloyed App: <a href="https://react-american-football-scoreboard-l8dr1c219.now.sh/">https://react-american-football-scoreboard-l8dr1c219.now.sh/ </a></p>
+										<p>GitHub Repo: <a href="https://github.com/Jessiehongtran/react-american-football-scoreboard">https://github.com/Jessiehongtran/react-american-football-scoreboard</a></p>
 										<div class="image main"><img src="images/score-board.png" alt="" /></div>
 									</header>
 								</section>
@@ -175,6 +264,7 @@
 										<h1>React<br />
 											Shopping Cart</h1>
 										<p>Deloyed App: <a href="https://react-shopping-cart.htran2.now.sh/">https://react-shopping-cart.htran2.now.sh/</a></p>
+										<p>GitHub Repo: <a href="https://github.com/Jessiehongtran/react-shopping-cart">https://github.com/Jessiehongtran/react-shopping-cart</a></p>
 										<div class="image main"><img src="images/shopping-cart.png" alt="" /></div>
 									</header>
 								</section>
@@ -185,32 +275,14 @@
 										<h1>React<br />
 											Todo List</h1>
 										<p>Deloyed App: <a href="https://react-todo-94ui582mm.now.sh/">https://react-todo-94ui582mm.now.sh/</a></p>
+										<p>GitHub Repo: <a href="https://github.com/Jessiehongtran/React-Todo/tree/master">https://github.com/Jessiehongtran/React-Todo/tree/master</a></p>
 										<div class="image main"><img src="images/todo.png" alt="" /></div>
 									</header>
 								</section>
 
-								<section class="post">
-									<header class="major">
-										<span class="date">Aug 27, 2019</span>
-										<h1>React<br />
-											React Bubble Color App</h1>
-										<p><b>Deloyed App: </b> <a href="https://react-bubble.now.sh/login">https://react-bubble.now.sh/login</a>
-										<i>(Username: test; Password: test)</i></p>
-										<p><b>App Features:</b> With this app, user should be able to login, request a token from the server that user'll use to send all other requests to the server, then EDIT, DELETE, ADD colors.</p>
-										<div class="image main"><img src="images/color.png" alt="" /></div>
-									</header>
-								</section>
+								
 
-								<section class="post">
-									<header class="major">
-										<span class="date">Aug 30, 2019</span>
-										<h1>Finding Planet App</h1>
-										<p>The Transiting Exoplanet Survey Satellite (TESS) is a space telescope for NASA's Explorers program, designed to search for exoplanets using the transit method in an area 400 times larger than that covered by the Kepler mission.</p>
-										<p>In a team including UI, Front End, Back End, Data Science, Machine Learning, we created this app so that users can through light curves vote likability whether a star is a planet and from there, it invokes a community helping to give input about planet exploration.</p>
-										<p><b>Deloyed App: </b> <a href="https://finding-planets-tess.netlify.com/">https://finding-planets-tess.netlify.com/</a>
-										<div class="image main"><img src="images/planet.png" alt="" /></div>
-									</header>
-								</section>
+								
 					</div>
 
 				<!-- Footer -->

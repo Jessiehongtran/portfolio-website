@@ -4693,6 +4693,54 @@ input, select, textarea {
 		
 	}
 
-	
+	.left{
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		align-items: flex-start
 
+		
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: flex-start
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: flex-start
+	}
+
+}
+
+	@media screen and (max-width: 736px) {
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: flex-start
+	}
+
+}
+
+	@media screen and (max-width: 980px) {
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			align-items: flex-start
+}
 	
